@@ -1,7 +1,7 @@
 let users = [];
 let filteredUsers = [];
 let currentPage = 1;
-let usersPerPage = 4;
+let usersPerPage = 5;
 let selectedUserId = null;
 
 document.getElementById("fetchBtn").addEventListener("click", fetchUsers);
