@@ -8,16 +8,49 @@
 </head>
 <body>
 
-    <div class="container">
+    <div class="top-bar">
         <h1>User Management App</h1>
+        <button id="themeToggle">🌙</button>
+    </div>
 
-        <input type="text" id="searchInput" placeholder="Search by name, email, city, company..." />
+    <div class="container">
 
-        <button id="fetchBtn">Fetch Users</button>
+        <div class="controls-grid">
+            <button id="fetchBtn">Fetch Users</button>
+
+            <select id="sortSelect">
+                <option value="">Sort by...</option>
+                <option value="name">Name</option>
+                <option value="email">Email</option>
+                <option value="city">City</option>
+            </select>
+
+            <input type="text" id="searchInput" placeholder="Search users..." />
+        </div>
+
+        <div id="loader" class="loader hidden"></div>
 
         <div id="userContainer" class="grid"></div>
 
+        <div class="pagination">
+            <button id="prevPage">Previous</button>
+            <span id="pageNumber">1</span>
+            <button id="nextPage">Next</button>
+        </div>
+
         <p id="message" class="message"></p>
+    </div>
+
+    <!-- Slide-out details panel -->
+    <div id="detailsPanel" class="details-panel">
+        <button id="closePanel">✕</button>
+        <h2>User Details</h2>
+        <div id="detailsContent"></div>
+
+        <h3>Edit User</h3>
+        <input type="text" id="editName" placeholder="Edit name">
+        <input type="text" id="editEmail" placeholder="Edit email">
+        <button id="saveEdit">Save Changes</button>
     </div>
 
     <script src="script.js"></script>
