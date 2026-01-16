@@ -147,3 +147,12 @@ function saveEdit() {
 function toggleTheme() {
     document.body.classList.toggle("dark-mode");
 }
+
+document.getElementById("deleteByIdBtn").addEventListener("click", () => {
+    const id = parseInt(document.getElementById("deleteIdInput").value);
+    if (!isNaN(id)) {
+        deleteUser(id);
+    } else {
+        alert("Please enter a valid numeric ID.");
+    }
+});
