@@ -10,22 +10,22 @@
 
     <div class="top-bar">
         <h1>User Management App</h1>
-        <button id="themeToggle">🌙</button>
+        <button id="themeToggle" style="width: 48.9px;height: 85.28px;">🌙</button>
     </div>
 
     <div class="container">
 
         <div class="controls-grid">
-            <button id="fetchBtn">Fetch Users</button>
+            <button id="fetchBtn" style="padding: 12px; height: 41.6px;">Fetch Users</button>
 
-            <select id="sortSelect">
+            <select id="sortSelect" style="padding: 12px; height: 41.6px;">
                 <option value="">Sort by...</option>
                 <option value="name">Name</option>
                 <option value="email">Email</option>
                 <option value="city">City</option>
             </select>
 
-            <input type="text" id="searchInput" placeholder="Search users..." />
+            <input type="text"id="searchInput" placeholder="Search users..."/>
 
             <div class="delete-by-id">
     <input type="number" id="deleteIdInput" placeholder="Enter user ID to delete" />
@@ -39,10 +39,9 @@
         <div id="userContainer" class="grid"></div>
 
         <div class="pagination">
-            <button id="prevPage" style="margin-right: 20px">Previous</button>
-            <span id="pageNumber" style="padding-top: 10px;
-    margin-right: 20px">1</span>
-            <button id="nextPage">Next</button>
+            <button id="prevPage" style="margin-right: 20px; width: 80px;">Previous</button>
+            <span id="pageNumber" style="padding-top: 10px; margin-right: 20px">1</span>
+            <button id="nextPage" style="width: 80px;">Next</button>
         </div>
 
         <p id="message" class="message"></p>

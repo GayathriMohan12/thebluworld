@@ -33,15 +33,15 @@ body {
 
 .controls-grid {
     display: grid;
-    grid-template-columns: 1fr 1fr 2fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     gap: 10px;
     margin-bottom: 20px;
 }
 
 button, select, input {
-    padding: 12px;
     border-radius: 6px;
     border: 1px solid #ccc;
+    height: 41.6px;
 }
 
 .grid {
@@ -126,9 +126,8 @@ button, select, input {
 
 #deleteIdInput {
     flex: 1;
-    padding: 12px;
     border-radius: 8px;
-    border: 1px solid #ccc;
+    border: 1px solid #ccc;;
 }
 
 #deleteByIdBtn {
@@ -139,3 +138,4 @@ button, select, input {
     border: none;
     cursor: pointer;
 }
+
